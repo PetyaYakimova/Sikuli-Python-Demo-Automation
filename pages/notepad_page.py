@@ -1,10 +1,7 @@
-from lackey import Screen
+from pages.base_page import BasePage
 
 
-class NotepadPage:
-
-    def __init__(self):
-        self.screen = Screen()
+class NotepadPage(BasePage):
 
     def open_file_menu(self):
         self.screen.click("images/file_menu.png")
